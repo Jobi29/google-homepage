@@ -2,29 +2,56 @@
     background-color: white;
     display:flex;
     flex-direction: column;
-    border: 3px solid red;
-    height: 96vh;
-    width: 96vw;
+    margin:5px 5px auto 5px;
     justify-content:space-between;
-
-}
-.header {
+    max-height: max-content;
 
 }
 .h-links{
-    border: 3px solid red;
     display:flex;
     flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
+    height: 50px;
+    font-size:14px;
+}
+.class{
+    padding: 7px;
+    justify-self: center;
+}
+.gb_Xe {
+    display: inline-block;
+    outline: none;
+    justify-self: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    fill: rgba(0,0,0,0.87);
+}
+.github > a > img{
+    height: 2.5em;
+    border-radius: 50%;
+}
+.gb_Xe:hover {
+    border: 3px solid;
+    border-radius: 50%;
+    opacity: 0.3;
+    fill: rgba(0,0,0,0.87);
+}
+.h-links > div {
+    padding: 7px 7px;
+}
+.h-links > div > a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+.h-links > div > a:hover{
+    text-decoration: underline;
 }
 .apps{
     flex-basis: 1.5em;;
-}
-.footer{
-    display:flex;
-    flex-direction: row;
-    background-color: rgba(0,0,0,.12);
-    height:15vh;
 }
 .search-box{
     display: flex;
@@ -32,7 +59,8 @@
 }
 .search-bar{
     display:flex;
-    width:60vw;
+    width:582px;
+    max-width: max-content;
     align-self: center;
     justify-content: center;
     margin:0 auto;
@@ -48,16 +76,18 @@
     outline:none;
   }
 .search-logo{
-    color: red;
-    margin-right:10px;
-    flex-basis:1.1em;
+    fill: grey;
+    padding-right: 20px;
+    flex-basis:1.2em;
     align-self: center;
 }
 .bar{
     border:none;
     font-size:16px;
     outline: none;
-    width:52vw;
+    width: 85%;
+    
+    background-color: white;
 
 }
 .logo-box{
@@ -65,7 +95,7 @@
     flex-direction: row;
     align-items:flex-end;
     justify-content: center;
-    height: 30vh;
+    height: 25vh;
 }
 .logo{
     height:min-content;
@@ -90,9 +120,10 @@
     width: auto;
     border:none;
     outline: none;
-    font-size:15px;
-    background-color: rgb(245, 239, 239);
-    color:#383838;
+    font-size:14px;
+    background-color:#f8f9fa;
+    cursor:pointer;
+    color:#3c4043;
     border-radius:4px;
     border: 1px solid white;
 }
@@ -100,8 +131,56 @@
     border: 1px solid #c8c8c8;
     color:black;
   }
-.location{
-    border:3px solid rgb(68, 29, 29);
+.langue{
     justify-items: center;
-    height:30vh;
+    height:27vh;
+    font-size:13px;
+}
+.langue-box{
+    display:flex;
+    height: min-content;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+.langue-text{
+    width:max-content;
+}
+.footer{
+    display:flex;
+    align-self:space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;;
+    height:13vh;
+}
+.footer-pt1{
+    height:max-content;
+    padding:15px 15px;
+    border-bottom:1px solid #dadce0;
+    color: rgba(0,0,0,.54);
+}
+.footer-pt2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height:max-content;
+
+}
+.fbox1 > a{
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+.fbox1 > a:hover{
+    text-decoration: underline;
+    
+}
+.fbox2 > a{
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
+.fbox2 > a:hover{
+    text-decoration: underline;
+
 }
